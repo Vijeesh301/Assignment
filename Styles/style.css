@@ -7,8 +7,8 @@ body{
   background-color: rgb(197, 243, 245);
 }
 
-body{
-  background-image: url(/Images/kerala/kathakalik2.JPG);
+.bg-secondary{
+  background-image: url(../Images/kerala/kathakalik2.JPG);
   background-repeat: no-repeat;
   height: 450px;
   background-position: center;
