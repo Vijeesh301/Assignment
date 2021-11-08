@@ -359,3 +359,12 @@ margin-left: 15%;
 .main{
   background-color: rgb(221, 240, 188);
 }
+
+/* @media */
+
+@media(max-width: 767px){
+  .image-alappey{
+    width: 350px;
+    height: 220px
+  }
+}
