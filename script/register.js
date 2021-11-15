@@ -3,10 +3,9 @@ let password = document.getElementById("password");
 let password1 = document.getElementById("password1");
 let mobile = document.getElementById("mobile");
 let email = document.getElementById("email");
-var ckeckbox = document.getElementById("checkbox");
 var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 var pass = /^[a-zA-Z0-9!@#$%^&*]{3,15}$/;
-
+let box = document.getElementById("checkbox");
 
 
 function validate(){
@@ -47,6 +46,12 @@ function validate(){
         return false;
     }
 
+    else if(mobile.value.length > 10){  
+        message2.innerHTML = "**Enter a 10 digit mobile number"; 
+        mobile.style.border="1px solid red" 
+        return false;
+    }
+
     else if(password.value.trim()==""){
         message3.innerHTML = "**Enter your password";
         password.style.border="1px solid red"
@@ -77,6 +82,10 @@ function validate(){
         return false;     
     }
 
+    else if(!this.checkbox.checked){
+        check.style.color = "red";
+        return false;
+    }
 
     else{
         return true;   
