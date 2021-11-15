@@ -16,7 +16,7 @@
     <div class="fixed-top">
         <div class="row">
             <div class="col-lg-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand img-fluid" href="./intex.html"><img src="./Images/kerala/kerala-t.png" alt="image"></a>
                     <!-- <img src="./Images/kerala/kerala-t.png" alt="image"> -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,51 +38,45 @@
 
 <!-- from -->
 <section class="container">
-    <form class="form" action="#">
+    <div class="form-register">
+    <form class="form" action="./welcome.html" onsubmit="return validate()">
         <h2 class="pt-3">CREATE AN ACCOUNT</h2>
             <br>
 
             <div class="input">
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                </svg> -->
-                <input type="text" class="form-control form-control-md" placeholder="Your Name">
+                <input type="text" class="form-control form-control-md" placeholder="Your Name" id="username" >
+                <span id = "message" style="color:rgb(233, 130, 130)"> </span>
             </div>
             <br>
 
             <div class="input">                
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
-                <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                </svg>  -->
-                <input type="text" class="form-control form-control-md" placeholder="Your Email">             
+                <input type="text" class="form-control form-control-md" placeholder="Your Email" id="email">
+                <span id = "message1" style="color:rgb(233, 130, 130)"> </span>  
+                <span id = "error" style="color:rgb(233, 130, 130)"> </span>           
+            </div>
+            <br>
+
+            <div class="input">                
+                <input type="text" class="form-control form-control-md" placeholder="Mobile number" id="mobile">
+                <span id = "message2" style="color:rgb(233, 130, 130)"> </span>             
             </div>
             <br>
 
             <div class="input">
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
-                <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                </svg> -->
-                <input type="password" class="form-control form-control-md" placeholder="Password">
+                <input type="password" class="form-control form-control-md" placeholder="Password" id="password">
+                <span id = "message3" style="color:rgb(233, 130, 130)"> </span>
             </div>
             <br>
 
             <div class="input">
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
-                <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
-                </svg> -->
-                <input type="password" class="form-control form-control-md" placeholder="Retype your Password">
+                <input type="password" class="form-control form-control-md" placeholder="Re-enter your Password" id="password1">
+                <span id = "message4" style="color:rgb(233, 130, 130)"> </span>
             </div>
             <br>
 
             <div class="form-check">
-                <input
-                class="form-check-input me-2"
-                type="checkbox"
-                value=""
-                id="form2Example3cg"
-                />
-                <label class="form-check-label" for="form2Example3g">
+                <input class="form-check-input me-2" type="checkbox" value="" id="checkbox" required/>
+                <label class="form-check-label" for="check-box">
                 I agree all statements in <a href="#" class="text-body"><u class="text-info">Terms of service</u></a>
                 </label>
             </div>
@@ -93,10 +87,12 @@
             </div>
             <p class="text-center text-white mt-2 mb-3">Have already an account? <a href="./signin.html" class="fw-bold text-body"><u class="text-info"> Sign In here</u></a></p>
     </form>
+    </div>
 </section>
 <!-- /form -->
 
 <script src="./Js/jquery-3.6.0.min.js"></script>    
 <script src="./Js/bootstrap.min.js.map"></script>
+<script src="./script/register.js"></script>
 </body>
 </html>
