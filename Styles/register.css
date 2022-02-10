@@ -1,0 +1,370 @@
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+body {
+	background-color: rgb(197, 243, 245);
+}
+
+.bg-new {
+	/* background-image: url(../Images/kerala/kathakalik2.JPG); */
+	background-repeat: no-repeat;
+	height: 650px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.main-head h2 {
+	margin-top: 7%;
+	letter-spacing: 3px;
+	color: rgb(240, 232, 186);
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-size: 40px;
+}
+
+header {
+	opacity: 0.9;
+	height: 6em;
+}
+
+#dis.img {
+	margin-top: 1%;
+	margin-left: 2%;
+}
+
+.png {
+	margin-top: 13px;
+}
+
+.navbar {
+	height: 80px;
+	opacity: 0.9;
+}
+
+#mySidenav a {
+	position: absolute;
+	left: -80px;
+	margin-top: 11%;
+	transition: 0.3s;
+	padding: 7px;
+	width: 100px;
+	height: 45px;
+	text-decoration: none;
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	border-radius: 0 10px 10px 0;
+}
+
+#mySidenav a:hover {
+	background-color: transparent;
+	border: 1px solid rgb(136, 25, 39);
+	left: 0;
+}
+
+#history {
+	top: 80px;
+	background-color: #03304e;
+}
+
+#air {
+	top: 140px;
+	background-color: rgb(17, 16, 78);
+}
+
+#hotel {
+	top: 200px;
+	background-color: rgb(49, 10, 71);
+}
+
+#enq {
+	top: 260px;
+	background-color: rgb(141, 5, 89);
+}
+
+.header {
+	float: right;
+	margin-top: 3%;
+	margin-right: 3%;
+}
+
+.header a {
+	color: white;
+	padding: 8px;
+}
+
+.header a:hover {
+	color: rgb(255, 238, 0);
+	transition: 0.1 ease-in-out;
+	text-decoration: none;
+}
+
+.history {
+	max-width: 260px;
+	min-width: none;
+	float: right;
+	margin-right: 30px;
+	margin-top: 1%;
+	color: rgb(200, 255, 0);
+}
+
+.col-lg-6 {
+	margin-left: 7%;
+}
+
+#explore {
+	text-align: center;
+	margin-top: 1%;
+	color: rgb(255, 255, 255);
+}
+
+.explore section {
+	background-color: rgb(0, 0, 0);
+	width: 100%;
+	height: 25px;
+	opacity: 0.7;
+	margin-top: 7%;
+}
+
+#dis-img {
+	width: 200px;
+	height: 100px;
+}
+
+.container {
+	padding: 8px;
+}
+
+.image {
+	opacity: 1;
+	display: block;
+	transition: 0.1s ease-in-out;
+	backface-visibility: hidden;
+}
+
+.middle {
+	transition: 0.15s ease-in-out;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.col:hover #dis-img {
+	opacity: 0.4;
+}
+
+.col:hover .middle {
+	opacity: 1;
+}
+
+.text {
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+	text-decoration: none;
+}
+
+.col h3 {
+	color: rgb(2, 45, 48);
+}
+
+.col {
+	padding-top: 5px;
+}
+
+/* .title{
+    margin-top: 15px;
+    height: 30px;
+    text-align: center;
+  } */
+
+.image-fluid {
+	width: 350px;
+	height: 175px;
+}
+
+.row p {
+	font-size: 16px;
+}
+
+footer {
+	background-color: rgb(152, 174, 179);
+	height: 150px;
+}
+
+.logo {
+	text-align: center;
+}
+
+.designed {
+	font-size: 12px;
+	text-align: center;
+}
+
+.navbar-nav {
+	margin-left: 80%;
+}
+
+/* register */
+
+.form {
+	margin-left: 25%;
+	border-radius: 25px;
+	text-align: center;
+	border: 1px solid rgb(20, 2, 2);
+	/* background-color: white; */
+	height: 50%;
+	width: 50%;
+	margin-top: 4%;
+	color: aliceblue;
+	text-decoration: navajowhite;
+}
+
+.form #register-button {
+	width: 70%;
+	height: 3em;
+	background-color: rgb(33, 182, 95);
+	color: white;
+}
+
+.input {
+	width: 70%;
+	margin-left: 15%;
+}
+
+/* /register */
+
+/* signin */
+
+.body-img {
+	/* background-image: url(../Images/Alapuzha/783A0004-1.JPG); */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.form-sign {
+	margin-left: 3%;
+	border-radius: 25px;
+	text-align: center;
+	border: 1px solid rgb(20, 2, 2);
+	background-color: rgb(17, 66, 88, 0.7);
+	height: 50%;
+	width: 35%;
+	margin-top: 15%;
+	color: aliceblue;
+	text-decoration: navajowhite;
+}
+
+.form-sign #register-button {
+	width: 70%;
+	height: 3em;
+	background-color: rgb(33, 182, 95);
+	color: white;
+}
+
+/* /signin */
+
+/* alappuzha */
+
+.carousel-inner {
+	height: 610px;
+}
+
+.carousel-caption {
+	margin-bottom: 40%;
+}
+
+.carousel-caption h5 {
+	font-size: 45px;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.carousel-caption p {
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-size: 35px;
+}
+
+.image-alappey {
+	width: 550px;
+	height: 300px;
+}
+
+/* read more */
+
+.col-6 button {
+	border-radius: 6px;
+}
+
+#more {
+	display: none;
+}
+
+#more1 {
+	display: none;
+}
+
+#more2 {
+	display: none;
+}
+
+#more3 {
+	display: none;
+}
+
+#more4 {
+	display: none;
+}
+
+#more5 {
+	display: none;
+}
+
+#more6 {
+	display: none;
+}
+
+#more7 {
+	display: none;
+}
+
+#more8 {
+	display: none;
+}
+
+#more9 {
+	display: none;
+}
+/* /read more */
+
+/* history */
+
+.container-fluid a {
+	font-size: 25px;
+	color: brown;
+}
+
+.main-text h2 {
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	color: crimson;
+}
+
+.main {
+	background-color: rgb(221, 240, 188);
+}
+
+/* @media */
+
+@media (max-width: 767px) {
+	.image-alappey {
+		width: 350px;
+		height: 220px;
+	}
+}
