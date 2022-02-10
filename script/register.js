@@ -49,15 +49,15 @@ function validate() {
 		password.style.border = "1px solid red";
 		return false;
 	} else if (password.value.length < 8) {
-		alert("Password length must be atleast 8 characters");
+		alert("**Password length must be atleast 8 characters");
 		password.style.border = "1px solid red";
 		return false;
 	} else if (password1.value.trim() == "") {
-		alert("Re-enter your password");
+		alert("**Re-enter your password");
 		password1.style.border = "1px solid red";
 		return false;
 	} else if (password1.value != password.value) {
-		alert("Password did not match");
+		alert("**Password did not match");
 		password1.style.border = "1px solid red";
 		return false;
 	} else if (!this.checkbox.checked) {
